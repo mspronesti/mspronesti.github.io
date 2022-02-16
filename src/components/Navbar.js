@@ -40,7 +40,9 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-         
+          <span/>
+          <span/>
+          <span/>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto" defaultActiveKey="#home">
