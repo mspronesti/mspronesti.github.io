@@ -1,9 +1,6 @@
-<h2 align="center">
-  Portfolio Website<br/>
-</h2>
+# Personal Portfolio Website
 
-
-
+[![made-with-react](https://img.shields.io/badge/Made%20with-React-orange.svg)](http://commonmark.org)
 
 ## 🛠 Installation and Setup Instructions
 
@@ -16,3 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 
 
+## Acknoledgment
+
+This project is adapted from [this](https://github.com/soumyajit4419/Portfolio) wonderful project from Soumyajit Behera.
