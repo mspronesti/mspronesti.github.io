@@ -18,8 +18,8 @@ function HomeIntro() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF...
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm pursuing a Double Degree M.Sc. in Computer Engineering at PoliTO and
+              Data Science at EURECOM 💻.
               <br />
               <br />I am fluent in classics like
               <i>
