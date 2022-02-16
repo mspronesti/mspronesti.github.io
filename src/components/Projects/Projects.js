@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import bayesnet from "../../Assets/Projects/bayesnet.jpg";
-import quantum from "../../Assets/Projects/quantum.png";
+import bayesnet from "../../assets/Projects/bayesnet.jpg";
+import quantum from "../../assets/Projects/quantum.png";
 
 
 function Projects() {

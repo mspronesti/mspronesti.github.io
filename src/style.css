@@ -29,7 +29,7 @@ html {
   height: 100%;
   z-index: 999999;
   background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-image: url(./assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -254,7 +254,7 @@ html {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: var(--image-gradient), url(./assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
