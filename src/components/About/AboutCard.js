@@ -29,10 +29,6 @@ function AboutCard() {
           </ul>
 
           <br/>
-          <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            "you can't climb the ladder of success with your hands in your pockets."{" "}
-          </p>
-          <footer className="blockquote-footer">Arnold Schwarzenegger</footer>
         </blockquote>
       </Card.Body>
     </Card>
