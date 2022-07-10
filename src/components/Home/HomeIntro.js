@@ -4,7 +4,8 @@ import myImg from "../../assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiFillMail
+  AiFillMail,
+  AiFillInstagram
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -18,7 +19,7 @@ function HomeIntro() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF...
             </h1>
             <p className="home-about-body">
-              I'm pursuing a Double Degree M.Sc. in Computer Engineering at PoliTO and
+              I'm pursuing a Double Degree M.Sc. in Computer Science Engineering at PoliTO and
               Data Science at EURECOM 💻.
               <br />
               <br />I am fluent in classics like
@@ -66,7 +67,7 @@ function HomeIntro() {
               
               <li className="social-icons">
                 <a
-                  href="."
+                  href="https://www.linkedin.com/in/massimiliano-pronesti"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -83,6 +84,16 @@ function HomeIntro() {
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/__mpronesti"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
                 </a>
               </li>
             </ul>

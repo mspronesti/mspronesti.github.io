@@ -6,7 +6,8 @@ import {
   SiJupyter, 
   SiPycharm,
   SiClion,
-  SiIntellijidea
+  SiIntellijidea,
+  SiVim
 } from "react-icons/si";
 
 
@@ -20,7 +21,8 @@ function Toolstack() {
           <SiPycharm />,
           <SiJupyter />,
           <SiIntellijidea/>,
-          <SiClion/>
+          <SiClion/>,
+          <SiVim/>
         ].map(tool => 
             <Col xs={4} md={2} className="tech-icons">
               {tool}

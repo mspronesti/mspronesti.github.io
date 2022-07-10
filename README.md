@@ -16,4 +16,4 @@ The page will reload if you make edits.
 
 ## Acknoledgments
 
-This website has been written starting from [this](https://github.com/soumyajit4419/Portfolio) wonderful project from Soumyajit Behera.
+This website has been written starting from [this](https://github.com/soumyajit4419/Portfolio) wonderful project from Soumyajit Behera, to which I contributed twice solving a couple of issues. Leave him a star for the awesome work! 
