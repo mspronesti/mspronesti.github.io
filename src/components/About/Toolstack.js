@@ -3,11 +3,9 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
   SiVisualstudiocode,
-  SiJupyter, 
-  SiPycharm,
-  SiClion,
-  SiIntellijidea,
-  SiVim
+  SiVim,
+  SiDocker,
+  SiGit
 } from "react-icons/si";
 
 
@@ -17,12 +15,10 @@ function Toolstack() {
       {
         [
           <SiLinux/>,
+          <SiGit/>,
           <SiVisualstudiocode/>,
-          <SiPycharm />,
-          <SiJupyter />,
-          <SiIntellijidea/>,
-          <SiClion/>,
-          <SiVim/>
+          <SiVim/>,
+          <SiDocker/>
         ].map(tool => 
             <Col xs={4} md={2} className="tech-icons">
               {tool}

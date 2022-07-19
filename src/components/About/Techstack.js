@@ -7,18 +7,20 @@ import {
   DiMongodb,
   DiPython,
   DiRust,
-  DiGit
+  DiSpark,
 } from "react-icons/di";
 import { 
   SiCplusplus,
+  SiJava,
   SiPytorch, 
   SiTensorflow, 
   SiFirebase, 
   SiQiskit, 
   SiScikitlearn,
-  SiDocker,
-  SiCmake
+  SiGnubash
 } from "react-icons/si";
+
+
 
 function Techstack() {
   return (
@@ -26,20 +28,20 @@ function Techstack() {
       {
         [
           <SiCplusplus />,
+          <DiPython />,
+          <SiJava/>,
           <DiJavascript1 />,
           <DiNodejs />,
           <DiReact />,
           <DiMongodb />,
-          <DiPython />,
           <SiScikitlearn />,
           <SiQiskit />,
           <SiPytorch />,
           <SiTensorflow />,
-          <DiGit />,
           <SiFirebase />,
+          <DiSpark />,
           <DiRust />,
-          <SiDocker />,
-          <SiCmake/>
+          <SiGnubash/>         
         ].map(tool => 
           <Col xs={4} md={2} className="tech-icons">
             {tool}
