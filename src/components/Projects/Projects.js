@@ -5,6 +5,7 @@ import Particle from "../Particle";
 
 import bayesnet from "../../assets/Projects/bayesnet.jpg";
 import quantum from "../../assets/Projects/quantum.png";
+import diffusers from "../../assets/Projects/diffusers2.jpg"
 import portfolio from "../../assets/Projects/portfolio.png";
 
 function Projects() {
@@ -19,6 +20,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={diffusers}
+              isBlog={false}
+              title="Diffusers-rs"
+              description="Rust implementation of the diffusers API, equivalent to huggingface's diffusers. Based on the tch-rs crate, the implementation is complete enough so as to be able to run Stable Diffusion v1.5 and v2.1. Main open-source contributor."
+              link="https://github.com/LaurentMazare/diffusers-rs"
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bayesnet}
@@ -44,7 +55,11 @@ function Projects() {
               imgPath={portfolio}
               isBlog={false}
               title="This Website"
-              description="Personal website portfolio. Built with React and  ❤️"
+              description="Personal website portfolio. Built with React, NodeJS and  ❤️
+              
+              
+              
+              "
               link="https://github.com/mspronesti/mspronesti.github.io"
             />
           </Col>
