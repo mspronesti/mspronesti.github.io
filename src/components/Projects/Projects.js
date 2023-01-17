@@ -35,7 +35,7 @@ function Projects() {
               imgPath={bayesnet}
               isBlog={false}
               title="Baylib"
-              description="High-performance C++20 library for bayesian inference on discrete bayesian network, supporting both CPU and GPU implementations (Cuda and/or Boost compute) of inference algorithms and copy-on-write memory optimizations."
+              description="High-performance header-only C++20 library for bayesian inference on discrete bayesian networks, supporting both CPU and GPU implementations (Cuda and OpenCL) of inference algorithms and copy-on-write (CoW) memory optimizations."
               link="https://github.com/mspronesti/baylib"
             />
           </Col>
@@ -55,17 +55,10 @@ function Projects() {
               imgPath={portfolio}
               isBlog={false}
               title="This Website"
-              description="Personal website portfolio. Built with React, NodeJS and  ❤️
-              
-              
-              
-              "
+              description="Personal website portfolio for professional usage. Built with React, NodeJS and ❤️. Highly customizable and easy to use."
               link="https://github.com/mspronesti/mspronesti.github.io"
             />
-          </Col>
-
-
-          
+          </Col>         
         </Row>
       </Container>
     </Container>
