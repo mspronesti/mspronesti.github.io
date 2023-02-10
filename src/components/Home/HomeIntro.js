@@ -16,7 +16,7 @@ function HomeIntro() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF...
+              LET ME <span className="green"> INTRODUCE </span> MYSELF...
             </h1>
             <p className="home-about-body">
               I'm pursuing a Double Degree M.Sc. in Computer Science Engineering at PoliTO and
@@ -24,17 +24,17 @@ function HomeIntro() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C, C++, Java, Python, Javascript. </b>
+                <b className="green"> C, C++, Python, Java, Rust, Javascript. </b>
               </i>
               <br />
               <br />
               I'm mainly interested in &nbsp;
               <i>
-                <b className="purple">High-Performance Computing</b>, {" "}
-                <b className="purple">
+                <b className="green">High-Performance Computing</b>, {" "}
+                <b className="green">
                   Machine Learning
-                </b>, and, recently <b className="purple">Quantum Computing</b>. 
-                I'm also very passionate about the field of pure <b className="purple">Software Engineering</b>. 
+                </b>, and, recently <b className="green">Quantum Computing</b>. 
+                I'm also very passionate about the field of pure <b className="green">Software Engineering</b>. 
               </i>
               <br />
               <br />
@@ -51,7 +51,7 @@ function HomeIntro() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="green">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

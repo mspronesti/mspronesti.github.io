@@ -1,7 +1,5 @@
 html {
-  --imp-text-color: var(--green-3);
-  
-  --gray-0: #161b22; 
+  --imp-text-color: var(--green-3);  
   --green-light: #92e3a9;
   --green-0: #0e4429;
   --green-1: #006d32;
@@ -9,9 +7,28 @@ html {
   --green-3: #39d353;
 
   --bg-color: #24292e;
+  --text-color: #ffffff;
 }
 
-.purple {
+.light {
+  --bg-color: #ffffff;
+  --text-color: #24292e;
+
+  --nav-active: transparent;
+  --footer-background: transparent;
+  --footer-social-icons: black;
+}
+
+.dark {
+  --bg-color: #24292e;
+  --text-color: #ffffff;
+
+  --nav-active: #161b22; 
+  --footer-background: #161b22;
+  --footer-social-icons: white;
+}
+
+.green {
   color: var(--imp-text-color) !important;
 }
 
@@ -73,7 +90,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: var(--gray-0) !important;
+  background-color: var(--nav-active) !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -84,6 +101,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
 }
 
 .navbar-toggler {
@@ -142,14 +160,14 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: var(--gray-0) !important;
+    background-color: var(--nav-active) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: var(--text-color) !important;
 }
 
 .logo {
@@ -158,7 +176,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--text-color)!important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -263,7 +281,7 @@ button:focus {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: var(--text-color);
   text-align: left;
 }
 
@@ -321,7 +339,7 @@ button:focus {
 }
 
 .home-about-description {
-  color: white !important;
+  color: var(--text-color) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -336,7 +354,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: var(--text-color) !important;
 }
 
 .home-about-social-links {
@@ -355,7 +373,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: rgba(255, 255, 255, 0.97) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -380,7 +398,6 @@ button:focus {
 }
 
 .home-social-icons:hover {
-  color: #87209e;
   box-shadow: 0 0 5px var(--green-3);
   text-shadow: 0 0 2px var(--green-3);
 }
@@ -399,7 +416,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: var(--gray-0);
+  background-color: var(--footer-background);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -411,6 +428,10 @@ button:focus {
 .footer-body {
   z-index: 1;
   text-align: center !important;
+}
+
+.footer-social-icons {
+  color: var(--footer-social-icons) !important;
 }
 
 @media (max-width: 767px) {
@@ -425,7 +446,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--text-color) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -463,7 +484,7 @@ button:focus {
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px var(--green-0) !important;
-  color: white !important;
+  color: var(--text-color) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -475,57 +496,14 @@ button:focus {
   box-shadow: 0 4px 4px 5px var(--green-1) !important;
 }
 
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-}
-
-.card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
-}
-
-.blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
-}
-
 .btn-primary {
-  color: #fff !important;
+  color: white !important;
   background-color: var(--green-1) !important;
   border-color: var(--green-1) !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
+  color: white !important;
   background-color: var(--green-2) !important;
   border-color: var(--green-2) !important;
 }
@@ -533,8 +511,20 @@ button:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
+.btn-toggle {
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.btn-toggle:hover {
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
 .project-heading {
-  color: white !important;
+  color: var(--text-color) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -548,7 +538,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  color: white !important;
+  color: var(--text-color) !important;
 }
 
 .tech-icons {
@@ -557,6 +547,8 @@ button:focus {
   padding: 10px !important;
   opacity: 0.93 !important;
   border: 1.7px solid var(--green-1) !important;
+  /* box-shadow: 4px 5px 4px 3px rgba(21, 158, 69, 0.137); */
+
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -583,7 +575,7 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: var(--text-color) !important;
   background-color: transparent !important;
 }
 
@@ -603,11 +595,11 @@ button:focus {
 /* Resume */
 /* --------- */
 
-.resume-section {
+/* .resume-section {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  color: white !important;
+  color: var(--text-color) !important;
 }
 
 .resume {
@@ -683,7 +675,7 @@ button:focus {
   top: 0;
   background: #fff;
   border: 2px solid #8a49a8;
-}
+} */
 
 .like-item {
   padding-top: 10px !important;

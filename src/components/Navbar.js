@@ -3,18 +3,14 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
-// import Button from "react-bootstrap/Button";
-// import logo from "../assets/logo.png";
+import BtnToggleTheme from "./BtnTottleTheme";
 
 import {
-  // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
 
-// import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -52,6 +48,7 @@ function NavBar() {
           <span/>
           <span/>
         </Navbar.Toggle>
+        
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -83,26 +80,9 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "3px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item> */}
-
-           {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/mspronesti/mspronesti.github.io"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+            <Nav.Item>
+              <BtnToggleTheme className="col-md-12"/>
+            </Nav.Item>
 
           </Nav>
         </Navbar.Collapse>

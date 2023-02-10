@@ -8,17 +8,24 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
+  let date = new Date();
+  let year = date.getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4">
         </Col>
+
+        <Col md="4">
+          <h3>Copyright © {year} Massimiliano Pronesti</h3>
+        </Col>
+
         <Col md="4">
           <ul className="footer-icons">
             <li className="social-icons">
-              <a
+              <a className="footer-social-icons"
                 href="https://github.com/mspronesti"
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -26,9 +33,8 @@ function Footer() {
               </a>
             </li>
             <li className="social-icons">
-              <a
+              <a className="footer-social-icons"
                 href="https://www.linkedin.com/in/massimiliano-pronesti/"
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -36,9 +42,8 @@ function Footer() {
               </a>
             </li>
             <li className="social-icons">
-              <a
+              <a className="footer-social-icons"
                 href="mailto:massimiliano.pronesti@gmail.com"
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -46,9 +51,8 @@ function Footer() {
               </a>
             </li>
             <li className="social-icons">
-              <a
+              <a className="footer-social-icons"
                 href="https://www.instagram.com/__mpronesti"
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
