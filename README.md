@@ -3,17 +3,20 @@
 [![Website status](https://img.shields.io/website-up-down-green-red/https/mspronesti.github.io.svg?label=Website%20status)](https://mspronesti.github.io)&nbsp;
 [![made-with-react](https://img.shields.io/badge/Made%20with-React-orange.svg)](http://commonmark.org)
 
+Personal dev portfolio written in React and NodeJS.
+
 ## 🛠 Installation and Setup Instructions
 
-1. Installation: `npm install`
+Install `npm` dependencies running
 
-2. In the project directory, you can run: `npm start`
+```shell
+$ npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+Run the portfolio locally in developement mode running
 
+```shell
+$ npm run
+```
 
-## Acknoledgments
-
-This website has been written starting from [this](https://github.com/soumyajit4419/Portfolio) wonderful project from Soumyajit Behera, to which I contributed twice solving a couple of issues. Leave him a star for the awesome work! 
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make any edit.
