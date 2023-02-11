@@ -60,7 +60,7 @@ export const DARK_THEME_PARTICLES = {
     value: 100,
     density: {
       enable: true,
-      area: 1500,
+      area: 800,
     },
   },
   move: {
