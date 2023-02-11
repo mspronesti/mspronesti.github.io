@@ -14,7 +14,7 @@ html {
   --bg-color: #ffffff;
   --text-color: #24292e;
 
-  --nav-active: transparent;
+  --nav-active: #f3f3f3;
   --footer-background: transparent;
   --footer-social-icons: black;
 }
@@ -408,6 +408,7 @@ button:focus {
   padding-left: 15px;
 }
 
+
 .icon-colour {
   color: var(--green-1) !important;
 }
@@ -422,6 +423,7 @@ button:focus {
   padding-bottom: 8px !important ;
 }
 .footer-copywright {
+  flex: 1;
   text-align: center !important;
 }
 
@@ -432,7 +434,13 @@ button:focus {
 
 .footer-social-icons {
   color: var(--footer-social-icons) !important;
+  display: flex !important;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0;
+  font-size: 1.1rem;
 }
+
 
 @media (max-width: 767px) {
   .footer-copywright {
@@ -516,6 +524,7 @@ button:focus {
   color: var(--text-color) !important;
   background-color: transparent !important;
   border-color: transparent !important;
+  position: relative !important;
 }
 .btn-toggle:hover {
   color: var(--text-color) !important;

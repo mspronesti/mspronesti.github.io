@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import BtnToggleTheme from "./BtnTottleTheme";
 
@@ -33,11 +32,6 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-        </Navbar.Brand>
-
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -48,6 +42,7 @@ function NavBar() {
           <span/>
           <span/>
         </Navbar.Toggle>
+      
         
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto" defaultActiveKey="#home">
@@ -79,14 +74,9 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <BtnToggleTheme className="col-md-12"/>
-            </Nav.Item>
-
           </Nav>
         </Navbar.Collapse>
-      </Container>
+        { !expand &&  <BtnToggleTheme/> }
     </Navbar>
   );
 }

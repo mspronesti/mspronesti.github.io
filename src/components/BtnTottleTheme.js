@@ -14,7 +14,7 @@ const BtnToggleTheme = ({ className }) => {
 
   return (
     <Button className={className + " btn-toggle"} onClick={toggleTheme}>
-      <ToggleThemeIcon style={{ marginTop: "10px", fontSize: "25px" }}/>
+      <ToggleThemeIcon style={{ fontSize: "25px" }}/>
     </Button>
   );
 };

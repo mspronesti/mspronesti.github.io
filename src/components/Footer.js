@@ -17,12 +17,12 @@ function Footer() {
         <Col md="4">
         </Col>
 
-        <Col md="4">
+        <Col md="4" className="footer-copyright">
           <h3>Copyright © {year} Massimiliano Pronesti</h3>
         </Col>
 
-        <Col md="4">
-          <ul className="footer-icons">
+        <Col md="4" className="footer-social-icons">
+          <ul>
             <li className="social-icons">
               <a className="footer-social-icons"
                 href="https://github.com/mspronesti"
