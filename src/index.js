@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "./hooks/themeHook";
+import "./i18n";
 
 ReactDOM.render(
   <ThemeProvider>

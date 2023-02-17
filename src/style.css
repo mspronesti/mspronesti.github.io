@@ -1,13 +1,17 @@
 html {
-  --imp-text-color: var(--green-3);  
   --green-light: #92e3a9;
   --green-0: #0e4429;
   --green-1: #006d32;
   --green-2: #26a641;
   --green-3: #39d353;
+  --imp-text-color: var(--green-3); 
+  height: 100%; 
+}
 
-  --bg-color: #24292e;
-  --text-color: #ffffff;
+.container{
+  flex-flow: column nowrap!important;
+  display: flex!important;
+  height: 100%!important;
 }
 
 .light {
@@ -20,7 +24,7 @@ html {
 }
 
 .dark {
-  --bg-color: #24292e;
+  --bg-color: #0d1117;
   --text-color: #ffffff;
 
   --nav-active: #161b22; 
@@ -30,6 +34,10 @@ html {
 
 .green {
   color: var(--imp-text-color) !important;
+}
+
+.text {
+  color: var(--text-color) !important;
 }
 
 button:focus {
@@ -99,7 +107,7 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0rem 3rem 0em!important;
   font-size: 1.2rem !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
 }
@@ -413,23 +421,26 @@ button:focus {
   color: var(--green-1) !important;
 }
 
+
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
   background-color: var(--footer-background);
-  bottom: 0 !important;
+  bottom: 0px !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 0px !important ;
+  text-align: center;
 }
+
 .footer-copywright {
   flex: 1;
-  text-align: center !important;
 }
 
 .footer-body {
   z-index: 1;
-  text-align: center !important;
+  padding: 0rem 3rem 0em!important;
+
 }
 
 .footer-social-icons {
@@ -532,6 +543,27 @@ button:focus {
   background-color: transparent !important;
   border-color: transparent !important;
 }
+
+
+/* DROPDOWN */
+.dropdown-toggle, .dropdown-toggle:hover {
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.dropdown-menu {
+  background-color: var(--nav-active) !important; 
+}
+
+.dropdown-item {
+  color: var(--text-color) !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--green-3) !important;
+}
+
 
 .project-heading {
   color: var(--text-color) !important;
@@ -687,26 +719,6 @@ button:focus {
   border: 2px solid #8a49a8;
 } */
 
-.like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-  font-family: sans-serif !important;
-}
-
-.like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
-}
-
-.like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
 
 .animate-like {
   animation-name: likeAnimation;
@@ -743,4 +755,3 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
-

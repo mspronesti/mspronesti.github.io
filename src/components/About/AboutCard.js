@@ -1,34 +1,38 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { FaHandPointRight } from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 function AboutCard() {
+  const  { t } = useTranslation();
+
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="green">Massimiliano Pronesti</span>,
-            a passionate Computer Science Engineering student from <span className="green"> Italy</span>,
-            currently in <span className="green"> France</span>.
+          {t('Greeting')} {t('Im')} <span className="green">Massimiliano Pronesti</span>, {t('MLE')} {t('IWorkAt')} <span className="green">{t('Company')}</span> {t('CompanyLocation')}.
+            <br/>
+            {t('IHoldDegree1')} <span className="green">Computer Science Engineering</span> {t('School1')} {t('And')} <span className="green">Data Science and Engineering</span> {t('School2')}.
             
-            <br />
-            <br />
-            Apart from coding, some other activities I love to do:
+            <br/>
+            <br/>
+            {t('Interests')}
           </p>
           <ul>
             <li className="about-activity">
-              <FaHandPointRight /> Going to the gym
+              <FaHandPointRight /> Machine Learning
             </li>
             <li className="about-activity">
-              <FaHandPointRight /> Going to the movies
+              <FaHandPointRight /> High-Performance Computing
             </li>
             <li className="about-activity">
-              <FaHandPointRight /> Travelling
+              <FaHandPointRight /> Quantum Computing
+            </li>
+            <li className="about-activity">
+              <FaHandPointRight /> Software Engineering
             </li>
           </ul>
 
-          <br/>
         </blockquote>
       </Card.Body>
     </Card>

@@ -17,7 +17,7 @@ function Github() {
     level3: "#26a641",
     level2: "#006d32",
     level1: "#0e4429",
-    level0: "#2d333b",
+    level0: "#161b22",
   } 
   :
   // colors for the white theme
@@ -31,9 +31,9 @@ function Github() {
   };
 
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "40px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="green">Code</strong>
+        <strong className="green">Github</strong> Activity
       </h1>
 
       <GitHubCalendar
