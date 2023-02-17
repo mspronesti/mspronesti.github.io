@@ -3,6 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import BtnToggleTheme from "./BtnTottleTheme";
+import { Col, Dropdown, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 import {
   AiOutlineHome,
@@ -10,27 +12,24 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
+import { MdLanguage } from 'react-icons/md';
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [lang, setLang] = useState("EN");
+  const { t, i18n } = useTranslation();
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setLang(lng)
+  };
 
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className="sticky"
     >
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -58,7 +57,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "3px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "3px" }} /> {t('About')}
               </Nav.Link>
             </Nav.Item>
 
@@ -71,12 +70,36 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "3px" }}
                 />{" "}
-                Projects
+                {t('Projects')}
               </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-        { !expand &&  <BtnToggleTheme/> }
+
+        { !expand &&  
+        <Row>
+          <Col className="col-sm-4">
+          <BtnToggleTheme/> 
+          </Col>
+          
+          <Col className="col-sm-4">
+          <Dropdown 
+            onSelect={e => changeLanguage(e)}
+          >
+            <Dropdown.Toggle id="dropdown-basic">
+              <MdLanguage style={{ fontSize: "26px"}}/> {lang}
+            </Dropdown.Toggle>
+          
+            <Dropdown.Menu>
+              <Dropdown.Item eventKey="EN">EN</Dropdown.Item>
+              <Dropdown.Item eventKey="IT">IT</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown> 
+          </Col>
+
+        </Row>       
+        }  
+        
     </Navbar>
   );
 }

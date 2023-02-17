@@ -18,8 +18,10 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./components/ScrollToTop";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
   const [load, upadateLoad] = useState(true);
   
   useEffect(() => {
@@ -29,6 +31,7 @@ function App() {
     
     return () => clearTimeout(timer);
   }, []);
+
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
@@ -43,8 +46,8 @@ function App() {
           {/* <Route path="/resume" element={<Resume />} /> */}
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

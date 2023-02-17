@@ -7,25 +7,26 @@ import bayesnet from "../../assets/Projects/bayesnet.jpg";
 import quantum from "../../assets/Projects/quantum.png";
 import diffusers from "../../assets/Projects/diffusers2.jpg"
 import portfolio from "../../assets/Projects/portfolio.png";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
+  
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="green">Works </strong>
+          {t('ProjHeader')} <strong className="green">{t('Works')} </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
+        <p className="text">{t('ProjSubtitle')}</p>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={diffusers}
-              isBlog={false}
               title="Diffusers-rs"
-              description="Rust implementation of the diffusers API, equivalent to huggingface's diffusers. Based on the tch-rs crate, the implementation is complete enough so as to be able to run Stable Diffusion v1.5 and v2.1. Main open-source contributor."
+              description={t('Proj1')}
               link="https://github.com/LaurentMazare/diffusers-rs"
             />
           </Col>
@@ -35,7 +36,7 @@ function Projects() {
               imgPath={bayesnet}
               isBlog={false}
               title="Baylib"
-              description="High-performance header-only C++20 library for bayesian inference on discrete bayesian networks, supporting both CPU and GPU implementations (Cuda and OpenCL) of inference algorithms and copy-on-write (CoW) memory optimizations."
+              description={t('Proj2')}
               link="https://github.com/mspronesti/baylib"
             />
           </Col>
@@ -45,7 +46,7 @@ function Projects() {
               imgPath={quantum}
               isBlog={false}
               title="Qlearnkit"
-              description="Python toolkit for quantum machine learning, developed on top of Qiskit, offers well-known supervised and unsupervised machine learning implementations for a gated quantum computer. Winner of a University award for best project."
+              description={t('Proj3')}
               link="https://github.com/mspronesti/qlearnkit"
             />
           </Col>
@@ -54,8 +55,8 @@ function Projects() {
             <ProjectCard
               imgPath={portfolio}
               isBlog={false}
-              title="This Website"
-              description="Personal website portfolio for professional usage. Built with React, NodeJS and ❤️. Highly customizable and easy to use."
+              title={t('ThisWebsite')}
+              description={t('Proj4')}
               link="https://github.com/mspronesti/mspronesti.github.io"
             />
           </Col>         

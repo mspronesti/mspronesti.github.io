@@ -11,17 +11,17 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
 
+
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4">
-        </Col>
+        <Col md="4"/>
 
         <Col md="4" className="footer-copyright">
           <h3>Copyright © {year} Massimiliano Pronesti</h3>
         </Col>
 
-        <Col md="4" className="footer-social-icons">
+        <Col md="4" className="footer-body">
           <ul>
             <li className="social-icons">
               <a className="footer-social-icons"
@@ -61,9 +61,8 @@ function Footer() {
             </li>
           </ul>
         </Col>
-        <Col md="4" className="footer-body">
-
-        </Col>
+        <Col md="4" className="footer-body"/>
+        
       </Row>
     </Container>
   );
