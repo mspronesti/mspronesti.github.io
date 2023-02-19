@@ -16,7 +16,7 @@ import { MdLanguage } from 'react-icons/md';
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [lang, setLang] = useState("EN");
+  const [lang, setLang] = useState("en");
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
@@ -87,12 +87,12 @@ function NavBar() {
             onSelect={e => changeLanguage(e)}
           >
             <Dropdown.Toggle id="dropdown-basic">
-              <MdLanguage style={{ fontSize: "26px"}}/> {lang}
+              <MdLanguage style={{ fontSize: "26px"}}/> {lang.toUpperCase()}
             </Dropdown.Toggle>
           
             <Dropdown.Menu>
-              <Dropdown.Item eventKey="EN">EN</Dropdown.Item>
-              <Dropdown.Item eventKey="IT">IT</Dropdown.Item>
+              <Dropdown.Item eventKey="en">EN</Dropdown.Item>
+              <Dropdown.Item eventKey="it">IT</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown> 
           </Col>
