@@ -3,9 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiFillMail,
-  AiFillInstagram,
 } from "react-icons/ai";
+
 import { FaLinkedinIn } from "react-icons/fa";
+import { BsTelegram } from "react-icons/bs";
 
 function Footer() {
   let date = new Date();
@@ -52,11 +53,11 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a className="footer-social-icons"
-                href="https://www.instagram.com/__mpronesti"
+                href="https://t.me/E_ll3"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <BsTelegram />
               </a>
             </li>
           </ul>
