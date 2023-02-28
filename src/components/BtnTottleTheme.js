@@ -1,14 +1,14 @@
 import { useMemo } from 'react';
 import { useThemeContext } from '../hooks/themeHook';
-import { BsSun } from 'react-icons/bs';
-import { FiMoon } from 'react-icons/fi';
+import { BsSunFill } from 'react-icons/bs';
+import { FaMoon } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 
 const BtnToggleTheme = ({ className }) => {
   const { dark, toggleTheme } = useThemeContext();
 
   const ToggleThemeIcon = useMemo(
-    () => (dark ? FiMoon : BsSun),
+    () => (dark ? FaMoon : BsSunFill),
     [dark],
   );
 
