@@ -26,7 +26,7 @@
     "Works": "Progetti",
     "View": "Vedi Progetto",
     "ProjSubtitle": "Alcuni progetti a cui ho lavorato recentemente",
-    "Proj1": "Implementazione in Rust dell'API dei diffusers, equivalente alla versione in python di huggingface. Basata su tch-rs, quest'implementazione consente di utilizzare Stable Diffusion v1.5 e v2.1. Io sono il principale Open-source contributor.",
+    "Proj1": "Implementazione in Rust dell'API dei diffusers, equivalente alla versione in Python di huggingface. Basata sul crate tch-rs (Torch in Rust), quest'implementazione, di cui io sono il principale Open-source contributor, consente di utilizzare Stable Diffusion v1.5 e v2.1.",
     "Proj2": "Libreria di inferenza bayesiana per reti bayesiane discrete scritta in C++20. Supporta implementazioni in CPU e GPU (Cuda e OpenCL) dei principali algoritmi di inferenza e del copy-on-write (CoW) per ottimizzare l'occupazione di memoria dei grafi.",
     "Proj3": "Python toolkit di quantum machine learning, basato su Qiskit, questo progetto implementa alcuni algoritmi di machine e deep learning per un computer quantistico. Questo progetto è risultato vincitore di un premio come miglior progetto ad EURECOM.",
     "Proj4": "Portfolio personale per uso professionale. Scritto in React, NodeJS e ❤️. Facile da utilizzare ed adattare per le proprie esigenze.",
