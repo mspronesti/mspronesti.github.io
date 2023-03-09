@@ -2,10 +2,13 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
+  SiMicrosoftazure,
   SiVisualstudiocode,
   SiVim,
   SiDocker,
-  SiGit
+  SiGit,
+  SiJupyter,
+  SiGooglecolab
 } from "react-icons/si";
 
 
@@ -16,9 +19,12 @@ function Toolstack() {
         [
           <SiLinux/>,
           <SiGit/>,
+          <SiMicrosoftazure />,
           <SiVisualstudiocode/>,
           <SiVim/>,
-          <SiDocker/>
+          <SiDocker/>,
+          <SiJupyter/>,
+          <SiGooglecolab/>
         ].map(tool => 
             <Col xs={4} md={2} className="tech-icons">
               {tool}
