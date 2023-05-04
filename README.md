@@ -1,7 +1,7 @@
 # Personal Portfolio Website [![Website Status](https://img.shields.io/website-up-down-green-red/https/mspronesti.github.io.svg?label=Website%20status)](https://mspronesti.github.io)&nbsp;
 
 
-Personal dev portfolio written in React and NodeJS.
+Personal developer portfolio written in React and NodeJS.
 
 If you use this project, please:
 * Leave it a star
@@ -21,7 +21,7 @@ Run the portfolio locally in developement mode running
 $ npm run
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make any edit.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## LICENSE
 This project is licensed under the [MIT](https://github.com/mspronesti/mspronesti.github.io/blob/master/LICENSE) license.
