@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
   SiMicrosoftazure,
-  SiVisualstudiocode,
+  SiAmazonaws,
   SiVim,
   SiDocker,
   SiGit,
@@ -20,7 +20,7 @@ function Toolstack() {
           <SiLinux/>,
           <SiGit/>,
           <SiMicrosoftazure />,
-          <SiVisualstudiocode/>,
+          <SiAmazonaws/>,
           <SiVim/>,
           <SiDocker/>,
           <SiJupyter/>,
