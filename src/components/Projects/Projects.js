@@ -7,6 +7,8 @@ import bayesnet from "../../assets/Projects/bayesnet.jpg";
 import quantum from "../../assets/Projects/quantum.png";
 import diffusers from "../../assets/Projects/diffusers2.jpg"
 import portfolio from "../../assets/Projects/portfolio.png";
+import pandasai from "../../assets/Projects/pandas-ai.png";
+
 import { useTranslation } from "react-i18next";
 
 function Projects() {
@@ -38,6 +40,16 @@ function Projects() {
               title="Baylib"
               description={t('Proj2')}
               link="https://github.com/mspronesti/baylib"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pandasai}
+              isBlog={false}
+              title="Pandas AI"
+              description={t('Proj5')}
+              link="https://github.com/gventuri/pandas-ai"
             />
           </Col>
 
