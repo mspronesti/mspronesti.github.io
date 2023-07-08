@@ -5,7 +5,7 @@ import Particle from "../Particle";
 
 import bayesnet from "../../assets/Projects/bayesnet.jpg";
 import quantum from "../../assets/Projects/quantum.png";
-import diffusers from "../../assets/Projects/diffusers2.jpg"
+import diffusers from "../../assets/Projects/diffusers.jpg"
 import portfolio from "../../assets/Projects/portfolio.png";
 import pandasai from "../../assets/Projects/pandas-ai.png";
 
