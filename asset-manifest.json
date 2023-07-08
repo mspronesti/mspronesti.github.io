@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.8e3e661a.css",
-    "main.js": "/static/js/main.66d3e707.js",
+    "main.js": "/static/js/main.0121f831.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/pandas-ai.png": "/static/media/pandas-ai.1c4182eacb4fde6c74e6.png",
     "static/media/quantum.png": "/static/media/quantum.67c1361065ff4d223e4c.png",
     "static/media/portfolio.png": "/static/media/portfolio.bebd8c712b54e733aed5.png",
     "static/media/bayesnet.jpg": "/static/media/bayesnet.90625879f818424c30cb.jpg",
     "static/media/home.svg": "/static/media/home.11d38661c5585fd9fd2858c3e4b20709.svg",
-    "static/media/diffusers2.jpg": "/static/media/diffusers2.9f73312db10409c74264.jpg",
+    "static/media/diffusers.jpg": "/static/media/diffusers.9f73312db10409c74264.jpg",
     "static/media/about.svg": "/static/media/about.fcd5f18ce5007375f7f31eaad46ce0f6.svg",
     "static/media/pre.svg": "/static/media/pre.375e2ef4ce68509fbb92.svg",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.8e3e661a.css.map": "/static/css/main.8e3e661a.css.map",
-    "main.66d3e707.js.map": "/static/js/main.66d3e707.js.map",
+    "main.0121f831.js.map": "/static/js/main.0121f831.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e3e661a.css",
-    "static/js/main.66d3e707.js"
+    "static/js/main.0121f831.js"
   ]
 }
