@@ -23,5 +23,10 @@ $ npm run
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Deployment
+This website is automatically built and deployed to github pages by this [action](https://github.com/mspronesti/mspronesti.github.io/blob/master/.github/workflows/gh-pages-publish.yml).
+
+After forking this project, setup github pages from the repository settings and after every commit the action will trigger deploying your portfolio webapp.
+
 ## LICENSE
 This project is licensed under the [MIT](https://github.com/mspronesti/mspronesti.github.io/blob/master/LICENSE) license.
