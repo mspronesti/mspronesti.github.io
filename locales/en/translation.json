@@ -30,6 +30,6 @@
     "Proj2": "High-performance header-only C++20 library for bayesian inference on discrete bayesian networks, supporting both CPU and GPU implementations (Cuda and OpenCL) of inference algorithms and copy-on-write (CoW) memory optimizations.",
     "Proj3": "Python toolkit for quantum machine learning, developed on top of Qiskit, offers well-known supervised and unsupervised machine learning implementations for a gated quantum computer. Winner of a University award for best project.",
     "Proj4": "Personal website portfolio for professional usage. Built with React, NodeJS and ❤️. Highly customizable and easy to use.",
-    "Proj5": "Pandas AI is a Python library that integrates generative artificial intelligence capabilities into Pandas, supporting a wide variety of Large Language Models (LLMs) and making dataframes conversational. Top 2 open source contributor.",
+    "Proj5": "Pandas AI is a Python library that integrates generative artificial intelligence capabilities into Pandas, supporting a wide variety of Large Language Models (LLMs) and making dataframes conversational. Main open source contributor.",
     "ThisWebsite": "This website"
 }
