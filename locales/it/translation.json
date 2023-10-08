@@ -30,6 +30,6 @@
     "Proj2": "Libreria di inferenza bayesiana per reti bayesiane discrete scritta in C++20. Supporta implementazioni in CPU e GPU (Cuda e OpenCL) dei principali algoritmi di inferenza e del copy-on-write (CoW) per ottimizzare l'occupazione di memoria dei grafi.",
     "Proj3": "Python toolkit di quantum machine learning, basato su Qiskit, questo progetto implementa alcuni algoritmi di machine e deep learning per un computer quantistico. Questo progetto è risultato vincitore di un premio come miglior progetto ad EURECOM.",
     "Proj4": "Portfolio personale per uso professionale. Scritto in React, NodeJS e ❤️. Facile da utilizzare ed adattare per le proprie esigenze.",
-    "Proj5": "Pandas AI è un framework, scritto in Python, che integra Pandas con i modelli generativi, supportando tutto lo spettro dei Large Language Models (LLMs) più popolari e rendendo i dataframes conversazionali. Top 2 open source contributor.",
+    "Proj5": "Pandas AI è un framework, scritto in Python, che integra Pandas con i modelli generativi, supportando tutto lo spettro dei Large Language Models (LLMs) più popolari e rendendo i dataframes conversazionali. Principale open source contributor.",
     "ThisWebsite": "Questo sito"
 }
