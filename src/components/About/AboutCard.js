@@ -20,13 +20,10 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <FaHandPointRight /> Machine Learning
+              <FaHandPointRight /> Machine and Deep Learning
             </li>
             <li className="about-activity">
               <FaHandPointRight /> High-Performance Computing
-            </li>
-            <li className="about-activity">
-              <FaHandPointRight /> Quantum Computing
             </li>
             <li className="about-activity">
               <FaHandPointRight /> Software Engineering
